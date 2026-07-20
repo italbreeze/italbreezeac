@@ -68,8 +68,15 @@
     }
     .hero-bg-circle.c1 { width: 700px; height: 700px; top: -200px; right: -100px; }
     .hero-bg-circle.c2 { width: 400px; height: 400px; bottom: -100px; left: 10%; opacity: 0.5; }
-    .hero-inner { position: relative; z-index: 2; display: flex; align-items: center; gap: 5rem; width: 100%; }
-    .hero-text { flex: 1; }
+    .hero-inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+}
     .hero-badge {
       display: inline-flex; align-items: center; gap: 0.5rem;
       background: rgba(33,150,243,0.15); border: 1px solid rgba(33,150,243,0.4);
@@ -126,7 +133,7 @@
       animation: float 4s ease-in-out infinite;
     }
     @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-    .hero-logo-card img { width: 240px; height: 240px; object-fit: contain; background: transparent; border-radius: 0; padding: 0; }
+    .hero-logo-card img { width: 290px; height: auto; max-width:100%; object-fit: contain; background: transparent; border-radius: 0; padding: 0; }
     .nate-badge {
       background: linear-gradient(135deg, var(--gold), #FF8F00);
       color: var(--navy); font-size: 0.75rem; font-weight: 800;
@@ -467,8 +474,8 @@
   <h2 class="section-title" style="color:white; margin:0 auto 0.9rem;">The Ital Breeze Experience</h2>
   <p class="section-sub" style="color:rgba(255,255,255,0.65); margin:0 auto 2.5rem;">Take a quick look at who we are and what we do.</p>
   <div style="max-width:720px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);">
-    <video controls playsinline preload="metadata" style="width:100%;display:block;background:#000;">
-      <source src="ital-breeze-promo.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline preload="auto" style="width:100%;display:block;background:#000;">
+  <source src="./ital-breeze-promo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
