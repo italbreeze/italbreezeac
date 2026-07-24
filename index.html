@@ -286,7 +286,40 @@
     .promise-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
     .promise-list li { display: flex; gap: 0.6rem; font-size: 0.88rem; color: rgba(255,255,255,0.85); }
     .promise-list .ck { color: #4FC3F7; }
+/* ── FAQ ── */
+#faq{
+  background:#fff;
+}
 
+.faq-list{
+  display:grid;
+  gap:1.25rem;
+}
+
+.faq-item{
+  background:var(--offwhite);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.5rem;
+  transition:.25s;
+}
+
+.faq-item:hover{
+  border-color:var(--sky);
+  box-shadow:0 8px 24px rgba(11,31,58,.08);
+}
+
+.faq-item h3{
+  color:var(--navy);
+  font-size:1.05rem;
+  margin-bottom:.6rem;
+}
+
+.faq-item p{
+  color:var(--slate);
+  line-height:1.7;
+  font-size:.92rem;
+}
     /* ── REVIEWS ── */
     #reviews { background: var(--offwhite); }
     .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; }
@@ -365,8 +398,9 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
-      .hero-inner { flex-direction: column; }
-      .hero-logo-wrap { order: -1; }
+      .hero-inner { flex-direction: column; align-items: center; gap: 20px; }
+      .hero-logo-wrap { order: -1; width: 100%; display: flex; justify-content: center; margin: 0; }
+      .hero-bg-circle { display: none; }
       .why-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .gallery-card.featured { grid-column: span 1; }
@@ -382,9 +416,7 @@
     }
     @media (prefers-reduced-motion: reduce) { .hero-logo-card { animation: none; } }
 </style>
-<meta name="description" content="Ital Breeze AC provides professional air conditioning repair, installation, maintenance, and emergency HVAC services in Broward, Miami-Dade, Palm Beach, and surrounding South Florida communities.">
-
-<meta name="keywords" content="AC repair Broward, air conditioning repair Miami, HVAC contractor Palm Beach, AC installation South Florida, emergency AC repair, HVAC maintenance, Ital Breeze AC">
+ <meta name="keywords" content="AC repair Broward, air conditioning repair Miami, HVAC contractor Palm Beach, AC installation South Florida, emergency AC repair, HVAC maintenance, Ital Breeze AC">
 
 <meta name="author" content="Ital Breeze AC">
 
@@ -396,6 +428,93 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="https://italbreezeac.com/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HVACBusiness",
+  "name":"Ital Breeze Heating & Cooling LLC",
+  "url":"https://italbreezeac.com",
+  "telephone":"+1-754-234-9021",
+  "image":"https://italbreezeac.com/logo.png",
+  "priceRange":"$$",
+  "areaServed":[
+    "Broward County",
+    "Miami-Dade County",
+    "Palm Beach County"
+  ],
+  "address":{
+    "@type":"PostalAddress",
+    "addressRegion":"FL",
+    "addressCountry":"US"
+  },
+  "serviceType":[
+    "Air Conditioning Repair",
+    "Air Conditioning Installation",
+    "Heating Repair",
+    "Heat Pump Service",
+    "Mini Split Installation",
+    "Commercial HVAC",
+    "Residential HVAC",
+    "Ductwork"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I service my air conditioner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most air-conditioning systems should receive professional maintenance at least once a year. In South Florida, where air conditioners run frequently, regular maintenance can improve efficiency, reduce breakdowns, and extend the life of the system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide emergency AC repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ital Breeze Heating & Cooling provides emergency air-conditioning repair services throughout Broward, Miami-Dade, Palm Beach, and surrounding South Florida communities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I repair or replace my HVAC system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best choice depends on the age of the system, repair cost, energy efficiency, and frequency of breakdowns. Ital Breeze can inspect your system and explain the most practical and affordable option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What brands do you service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ital Breeze services most major HVAC brands, including Rheem, Carrier, Goodman, Amana, and many others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ital Breeze serves homes and businesses throughout Broward County, Miami-Dade County, Palm Beach County, and surrounding South Florida areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install ductless mini-split systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ital Breeze installs, repairs, and maintains ductless mini-split systems for homes and businesses."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <!-- ANNOUNCEMENT BAR -->
@@ -641,7 +760,48 @@
     </div>
   </div>
 </section>
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-eyebrow">Frequently Asked Questions</div>
+  <h2 class="section-title">HVAC Questions We Hear Every Day</h2>
+  <p class="section-sub">
+    Here are answers to some of the most common heating and air conditioning questions from homeowners and businesses throughout Broward, Miami-Dade, Palm Beach, and surrounding South Florida communities.
+  </p>
 
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <h3>How often should I service my air conditioner?</h3>
+      <p>We recommend professional AC maintenance at least once a year. In South Florida's hot and humid climate, regular maintenance helps improve efficiency, reduce energy costs, and prevent unexpected breakdowns.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you provide emergency AC repair?</h3>
+      <p>Yes. Ital Breeze Heating & Cooling offers emergency air conditioning repair when your system stops working unexpectedly. We work hard to restore your comfort as quickly as possible.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Should I repair or replace my HVAC system?</h3>
+      <p>If your system is more than 10–15 years old, requires frequent repairs, or has become inefficient, replacing it may save money over time. We'll inspect your equipment and recommend the most cost-effective solution.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What brands do you service?</h3>
+      <p>We repair, maintain, and install most major HVAC brands, including Carrier, Trane, Rheem, Goodman, Amana, Lennox, York, Bryant, and many others.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What areas do you serve?</h3>
+      <p>We proudly serve Broward County, Miami-Dade County, Palm Beach County, and surrounding South Florida communities for residential and commercial HVAC services.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you install ductless mini-split systems?</h3>
+      <p>Yes. We install, repair, and maintain ductless mini-split systems for homes, offices, additions, garages, and other spaces that need efficient climate control.</p>
+    </div>
+
+  </div>
+</section>
 <!-- REVIEWS -->
 <section id="reviews">
   <div class="section-eyebrow">Customer Reviews</div>
