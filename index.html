@@ -339,7 +339,42 @@
       transition: background 0.2s, color 0.2s;
     }
     .btn-more-reviews:hover { background: var(--sky); color: white; }
+/* ── SERVICE AREAS ── */
+#service-areas{
+  background:var(--offwhite);
+}
 
+.service-area-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+  margin:2rem 0;
+}
+
+.service-area-grid span{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px 16px;
+  font-weight:600;
+  color:var(--navy);
+  text-align:center;
+  transition:.25s;
+}
+
+.service-area-grid span:hover{
+  border-color:var(--sky);
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(11,31,58,.08);
+}
+
+.service-area-note{
+  text-align:center;
+  max-width:800px;
+  margin:1rem auto 0;
+  color:var(--slate);
+  line-height:1.7;
+}
     /* ── CONTACT ── */
     #contact { background: var(--navy); color: white; }
     #contact .section-title { color: white; }
@@ -839,7 +874,44 @@
     </a>
   </div>
 </section>
+<section id="service-areas">
+  <div class="section-eyebrow">Where We Work</div>
 
+  <h2 class="section-title">Proudly Serving South Florida</h2>
+
+  <p class="section-sub">
+    Ital Breeze Heating & Cooling proudly provides residential and commercial HVAC
+    installation, repair, maintenance, and emergency service throughout South Florida.
+  </p>
+
+  <div class="service-area-grid">
+    <span>📍 Weston</span>
+    <span>📍 Davie</span>
+    <span>📍 Plantation</span>
+    <span>📍 Sunrise</span>
+    <span>📍 Pembroke Pines</span>
+    <span>📍 Miramar</span>
+    <span>📍 Cooper City</span>
+    <span>📍 Southwest Ranches</span>
+    <span>📍 Fort Lauderdale</span>
+    <span>📍 Hollywood</span>
+    <span>📍 Coral Springs</span>
+    <span>📍 Parkland</span>
+    <span>📍 Boca Raton</span>
+    <span>📍 Deerfield Beach</span>
+    <span>📍 Miami</span>
+    <span>📍 Miami Beach</span>
+    <span>📍 Doral</span>
+    <span>📍 Kendall</span>
+    <span>📍 Palm Beach Gardens</span>
+    <span>📍 West Palm Beach</span>
+  </div>
+
+  <p class="service-area-note">
+    Don't see your city listed? Give us a call! We proudly serve customers throughout
+    Broward, Miami-Dade, Palm Beach, and surrounding South Florida communities.
+  </p>
+</section>
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-eyebrow">Get In Touch</div>
