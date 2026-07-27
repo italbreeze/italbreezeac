@@ -450,6 +450,56 @@
       .trust-sep { display: none; }
     }
     @media (prefers-reduced-motion: reduce) { .hero-logo-card { animation: none; } }
+    /* WHY CHOOSE ITAL BREEZE */
+.why-us {
+  background: var(--offwhite);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.why-card {
+  background: #ffffff;
+  border: 1px solid rgba(11, 31, 58, 0.10);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 38px rgba(11, 31, 58, 0.14);
+}
+
+.why-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.why-card h3 {
+  margin-bottom: 0.65rem;
+}
+
+.why-card p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
  <meta name="keywords" content="AC repair Broward, air conditioning repair Miami, HVAC contractor Palm Beach, AC installation South Florida, emergency AC repair, HVAC maintenance, Ital Breeze AC">
 
@@ -758,6 +808,60 @@
   </div>
 </section>
 
+<!-- WHY CHOOSE ITAL BREEZE -->
+<section id="why-us" class="why-us">
+
+  <div class="section-eyebrow">Why Choose Ital Breeze</div>
+
+  <h2 class="section-title">
+    Trusted by Homeowners & Businesses Across South Florida
+  </h2>
+
+  <p class="section-sub">
+    Choosing an HVAC company is about more than price. You deserve experienced professionals, honest recommendations, and dependable service every time.
+  </p>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <div class="why-icon">🏅</div>
+      <h3>NATE Certified</h3>
+      <p>Nationally certified expertise delivering professional repairs, maintenance, and installations done right the first time.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">💲</div>
+      <h3>Honest Pricing</h3>
+      <p>Competitive pricing with no hidden surprises. We recommend only the work your system actually needs.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">⚡</div>
+      <h3>Fast Response</h3>
+      <p>When your comfort is on the line, we respond quickly to restore your heating or cooling system.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🏠</div>
+      <h3>Residential & Commercial</h3>
+      <p>From homes to offices and commercial buildings, Ital Breeze has the experience to handle projects of every size.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🛡️</div>
+      <h3>Licensed & Insured</h3>
+      <p>Every project is completed professionally with the protection and peace of mind you expect.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🤝</div>
+      <h3>Customer First</h3>
+      <p>We build long-term relationships through honest advice, quality workmanship, and dependable service.</p>
+    </div>
+
+  </div>
+
+</section>
 <!-- SERVICES -->
 <section id="services">
   <div class="section-eyebrow">What We Do</div>
