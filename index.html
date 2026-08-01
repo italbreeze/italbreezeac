@@ -401,7 +401,7 @@
 }
 
   .qr-code{
-    width:240px;
+    width:275px;
     max-width:100%;
     background:#fff;
     padding:18px;
@@ -410,7 +410,12 @@
     box-shadow:0 25px 60px rgba(0,0,0,.18);
     transition:.35s ease;
 }
-
+.qr-actions{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
 .qr-code:hover{
     transform:scale(1.05) rotate(-2deg);
     box-shadow:0 35px 70px rgba(21,101,192,.35);
@@ -1248,18 +1253,23 @@ Experience what makes Ital Breeze different.
 <!-- QR CODE SECTION -->
 <section class="qr-section">
   <div class="qr-container">
-    <h2>Save Our Contact Information</h2>
+    <h2>📲 Scan to Call or Book Service</h2>
 
     <p>
       Scan this QR code to instantly call, text, or visit Ital Breeze Heating & Cooling.
     </p>
+
+   <div class="qr-actions">
 
     <img src="images/italbreeze-qr.png"
          alt="Ital Breeze QR Code"
          class="qr-code">
 
     <a href="tel:7542349021" class="btn-hero-main">
-      📞 Call (754) 234-9021
+        📞 Call (754) 234-9021
+    </a>
+
+</div>
     </a>
   </div>
 </section>
