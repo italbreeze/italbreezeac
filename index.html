@@ -514,15 +514,31 @@
 .showcase-grid img{
   width:100%;
   display:block;
-  border-radius:20px;
-  box-shadow:0 15px 35px rgba(0,0,0,.18);
-  transition:.3s;
+  border-radius:22px;
+  border:3px solid rgba(255,255,255,.18);
+  box-shadow:0 18px 45px rgba(0,0,0,.22);
+  transition:.35s ease;
 }
 
 .showcase-grid img:hover{
-  transform:translateY(-6px);
+  transform:translateY(-8px) scale(1.02);
+  box-shadow:0 28px 60px rgba(0,0,0,.35);
+}
+.showcase-grid{
+  position:relative;
 }
 
+.showcase-grid::before{
+  content:"";
+  position:absolute;
+  inset:-12px;
+  border-radius:26px;
+  background:linear-gradient(135deg,
+      rgba(0,170,255,.18),
+      rgba(255,255,255,.08));
+  z-index:-1;
+  filter:blur(18px);
+}
 @media (max-width:768px){
   .showcase-grid{
     grid-template-columns:1fr;
@@ -900,18 +916,21 @@
   </div>
 
 </section>
-<!-- Trusted Across South Florida. PROFESSIONAL HVAC Service You Can Count On -->
+<!-- THE ITAL BREEZE EXPERIENCE -->
 <section class="showcase">
 
-  <div class="section-eyebrow">Trusted Across South Florida</div>
+  <div class="section-eyebrow">
+THE ITAL BREEZE EXPERIENCE
+</div>
 
-  <h2 class="section-title">
-    Professional HVAC Service You Can Count On.
-  </h2>
+<h2 class="section-title">
+See Why South Florida Trusts Ital Breeze
+</h2>
 
-  <p class="section-sub">
-    Every service call is performed with professionalism, precision, and respect for your home.
-  </p>
+<p class="section-sub">
+Real technicians. Real installations. Real customers. Real comfort.
+Experience what makes Ital Breeze different.
+</p>
 
   <div class="showcase-grid">
 
